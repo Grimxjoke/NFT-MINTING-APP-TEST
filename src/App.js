@@ -269,7 +269,8 @@ function App() {
                 <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  Excluding gas fees.
+                  Chechout The collection on OpenSea
+                  <a href="https://testnets.opensea.io/collection/oval" target="_blank" style={{ textDecoration: 'none', color: '#ff00e6' }} > here</a>
                 </s.TextDescription>
                 <s.SpacerSmall />
                 {blockchain.account === "" ||
@@ -361,6 +362,8 @@ function App() {
                       >
                         {claimingNft ? "Loading..." : "BUY"}
                       </StyledButton>
+
+
                     </s.Container>
                   </>
                 )}
@@ -370,6 +373,7 @@ function App() {
           </s.Container>
           <s.SpacerLarge />
           <s.Container flex={1} jc={"center"} ai={"center"}>
+
             <StyledImg
               alt={"example"}
               src={"/config/images/example.gif"}
@@ -379,23 +383,9 @@ function App() {
         </ResponsiveWrapper>
         <s.SpacerMedium />
         <s.Container jc={"center"} ai={"center"} style={{ width: "70%" }}>
-          <s.TextDescription
-            style={{
-              textAlign: "center",
-              color: "var(--primary-text)",
-            }}
-          >
 
-          </s.TextDescription>
           <s.SpacerSmall />
-          <s.TextDescription
-            style={{
-              textAlign: "center",
-              color: "var(--primary-text)",
-            }}
-          >
 
-          </s.TextDescription>
         </s.Container>
       </s.Container>
     </s.Screen>
